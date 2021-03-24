@@ -1,11 +1,11 @@
 import React from 'react'
 
-const GifGridItem = ({url, title}) => {
+ const GifGridItem = ({url, title}) => {
 
     return (
         <div className="card animate__animated animate__bounce">
             <img src={url} alt={title} />
-            <p>{title}</p>
+            { title ? <p> {title} </p> : <p> Titulo por defecto </p> }
         </div>
     )
 }
